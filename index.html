@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagamento Aprovado</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="checkmark">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+          <circle
+            class="circle-bg"
+            cx="36"
+            cy="36"
+            r="35"
+            fill="none"
+            stroke="#e0e0e0"
+            stroke-width="4"
+          />
+          <circle
+            class="circle"
+            cx="36"
+            cy="36"
+            r="35"
+            fill="none"
+            stroke="#4caf50"
+            stroke-width="4"
+          />
+          <path
+            class="check"
+            fill="none"
+            stroke="#4caf50"
+            stroke-width="5"
+            d="M22 38 l10 10 18-18"
+          />
+        </svg>
+      </div>
+      <h1>Pagamento Aprovado!</h1>
+      <p>Obrigado por sua compra.</p>
+      <button id="redirect-btn">Continuar</button>
+    </div>
+
+    <script>
+      document
+        .getElementById('redirect-btn')
+        .addEventListener('click', function () {
+          window.location.href = 'https://www.exemplo.com' // Coloque o link desejado aqui
+        })
+    </script>
+  </body>
+</html>
